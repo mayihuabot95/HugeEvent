@@ -10,6 +10,7 @@ body {
 
 * {
     box-sizing: border-box;
+    font-size: 14px;
     color: #757575;
 }
 
@@ -55,7 +56,7 @@ body {
 .LoginandRegBox .BoxBody button {
     width: 340px;
     height: 38px;
-    font-size: 14px;
+    border: 0;
     color: #fff;
     background-color: #1e9fff;
 }
