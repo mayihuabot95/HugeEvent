@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大事件-首页</title>
-     <!-- 导入jquery -->
-     <script src="/assets/lib/jquery.js"></script>
+     
      <!-- 导入layUI的样式 -->
      <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
      <!-- 导入自己的index页面的样式 -->
@@ -76,16 +75,19 @@
         © mayihuane@yeah.com
       </div>
     </div>
-    <script src="../src/layui.js"></script>
-    <script>
-    //JavaScript代码区域
-    layui.use('element', function(){
-      var element = layui.element;
-    });
-    </script>
     </body>
+    <!-- 导入jquery -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 导入baseAPI -->
+    <script src="/assets/js/baseAPI.js"></script>
     <!-- 导入layUI的js文件 -->
     <script src="/assets/lib/layui/layui.all.js"></script>
     <!-- 导入第三方图标库 -->
     <link rel="stylesheet" href="/assets/fonts/iconfont.css">
+    <script>
+      //JavaScript代码区域
+      layui.use('element', function(){
+        var element = layui.element;
+      });
+    </script>
 </html>
