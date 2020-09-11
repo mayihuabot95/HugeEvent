@@ -11,7 +11,15 @@ body {
 * {
     box-sizing: border-box;
     font-size: 14px;
+}
+
+input,
+button {
     color: #757575;
+}
+
+a {
+    text-decoration: none;
 }
 
 .layui-main {
@@ -48,15 +56,34 @@ body {
     width: 340px;
     height: 38px;
     margin-bottom: 18px;
+    padding-left: 30px;
     border: 1px solid #d3d3d3;
 }
 
-.LoginandRegBox .BoxBody #uname::before {}
+.LoginandRegBox .BoxBody .layui-form-item {
+    position: relative;
+}
+
+.LoginandRegBox .BoxBody i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
 
 .LoginandRegBox .BoxBody button {
     width: 340px;
     height: 38px;
     border: 0;
     color: #fff;
-    background-color: #1e9fff;
+}
+
+.LoginandRegBox .BoxBody a {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+    font-size: 12px;
+}
+
+.regbox {
+    display: none;
 }
