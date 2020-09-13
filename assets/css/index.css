@@ -1,8 +1,16 @@
+#welcome {
+    font-size: 10px;
+}
+
 .layui-footer {
     text-align: center;
 }
 
 .iconfont {
+    margin-right: 8px;
+}
+
+.layui-icon {
     margin-right: 8px;
 }
 
@@ -13,6 +21,10 @@ iframe {
 
 .layui-body {
     overflow: hidden;
+}
+
+.layui-nav-child dd {
+    padding-left: 15px;
 }
 
 a {
@@ -32,10 +44,6 @@ a {
     border-bottom: 1px solid #282b33;
     line-height: 60px;
     text-align: center;
-}
-
-#welcome {
-    font-size: 12px;
 }
 
 .text-avatar {

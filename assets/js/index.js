@@ -21,10 +21,12 @@ function renderAvatar(res) {
     // 设置欢迎的文本
     var time = new Date(),
       h = time.getHours();
-    if (h >= 12 && h <= 18) {
+    if (h >= 12 && h < 18) {
         $('#welcome').html('下午好&nbsp;&nbsp;'+ name);
     } else if (h >= 6 && h < 12) {
         $('#welcome').html('早上好&nbsp;&nbsp;'+ name);
+    } else {
+        $('#welcome').html('晚上好&nbsp;&nbsp;'+ name);
     }
     // console.log(h);
     // 按需渲染用户的头像
