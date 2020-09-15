@@ -31,7 +31,7 @@ function renderAvatar(res) {
     // console.log(h);
     // 按需渲染用户的头像
     if(res.user_pic !== null) {
-        $('.layui-nav-img').attr('src', res.user_pic ).show();
+        $('.layui-nav-img').attr('src', res.user_pic).show();
         $('.text-avatar').hide();
     } else {
         var firstletter = name[0].toUpperCase();

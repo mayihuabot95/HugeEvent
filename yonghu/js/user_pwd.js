@@ -25,7 +25,7 @@ $('.layui-form').on('submit',function(e) {
     $.ajax({
         type: 'POST',
         url: '/my/updatepwd',
-        data: $('.layui-form').serialize(),
+        data: $(this).serialize(),
         success: function(res) {
             if(res.status !== 0) {
                 return alertMsg.msg('修改密码失败！');
