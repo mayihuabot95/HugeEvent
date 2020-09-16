@@ -5,8 +5,8 @@ $(function() {
    // 自定义一个判断昵称合法性的表单校验规则
     form.verify({
         nickname: function(value) {
-            if(value.length > 6) {
-                return alertMsg.msg('昵称的长度必须在1~6个字符之间！');
+            if(value.trim().length > 6) {
+                return '昵称的长度必须在1~6个字符之间！';
             }
         }
     })
@@ -14,6 +14,7 @@ $(function() {
     $('.layui-form').on('submit',function(e) {
         e.preventDefault();
         var userinfo = form.val("UserInfoForm"); 
+        console.log(userinfo);
         $.ajax({
             type: 'POST',
             url: '/my/userinfo',
